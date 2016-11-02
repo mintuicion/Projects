@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Hi Here</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--CSS de Bootstrap-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--Hoja de estilo CSS-->
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+<!--Librería de Jquery-->
+  <script src="js/jquery.js"></script>
+<!--Javascript-->
+  <script type="text/javascript" src="js/script-login.js"></script>
+<!--JavaScript de Bootstrap-->  
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section class="seccionlogin">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="login-form">
+              <h3>LOGIN</h3>
+              <br>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Correo electrónico" id="correo">
+              </div>
+              <div class="form-group log-status">
+                <input type="password" class="form-control" placeholder="Contraseña" id="contrasena">
+              </div>
+              <button type="button" class="btn btn-secundary" id="entrar" onclick="entrar()">Entrar</button>
+              <a href="registro.html"><button type="button" class="btn btn-secundary" id="registro"> Registrarse</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

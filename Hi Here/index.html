@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Hi Here</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<!--CSS de Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--Hoja de estilo CSS-->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<!--Librería de Jquery-->
+  <script src="js/jquery.js"></script>
+<!--Javascript, aquí está todo el JSON-->
+  <script type="text/javascript" src="js/json.js"></script>
+<!--Javascript, aquí están todas las funciones del filtro del buscador-->
+  <script type="text/javascript" src="js/script.js"></script>
+<!--Plugin de jquery que se llama ScrollTo, para poder hacer scroll entre las diferentes partes de la página web-->
+  <script type="text/javascript" src="js/jquery.scrollTo.js"></script> 
+<!--JavaScript de Bootstrap-->  
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--Librería con iconos para Bootstrap, utilizado para los iconos de Social Media del footer y de la barra lateral-->
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome-4.6.3/css/font-awesome.min.css"/>
+<!--He obtenido una API KEy de Google para poder utilizar la geolocalización en Chrome-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEr5qmzZSTGVwMtyguj92E0lrIVjhtdOA" type="text/javascript"></script>
+</head>
+
+
+<body>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- MENÚ EN DISPOSITIVOS MÓVILES, CON EL SÍMBOLO DE LAS 3 RAYAS -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="javascript:$.scrollTo('#top',800);">HI HERE</a>
+            </div>
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="javascript:$.scrollTo('#comofunciona',800);">Cómo funciona</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="javascript:$.scrollTo('#nuestraapp',800);">Buscador</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="javascript:$.scrollTo('#contact',800);">¿Hablamos?</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn navbar-btn"><a href="login.html">Iniciar sesión</a></button> 
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--HEADER, IMAGEN A TAMAÑO COMPLETO Y TEXTO-->
+     <header id="top">
+        <div class="header-contenido">
+            <div class="header-contenido-interior">
+                <h1>TU BUSCADOR PARA DESCUBRIR NUEVAS CAFETERÍAS EN SEVILLA</h1>
+                <br><br>
+                <p>Más de 50 cafeterías en Sevilla ya utilizan Hi Here para ofrecer a sus clientes la mejor taza de café.</p>
+                <!--Se ha utilizado un plugin de Jquery que pongo en el head -->
+                <a href="javascript:$.scrollTo('#nuestraapp',800);" class="btn btn-primary btn-xl page-scroll">¡Empezar!</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Sección de CÓMO FUNCIONA-->
+    <section class="seccionmarron" id="comofunciona">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="seccion-encabezado">CÓMO FUNCIONA</h2>
+                    <br>
+                    <p class="textosemitransparente">Con el buscador de Hi Here podrás encontrar nuevas cafeterías de la manera más sencilla y divertida.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="icono">
+                        <h1><span class="glyphicon glyphicon-user" aria-hidden="true"></span></h1>
+                        <h2>Regístrate</h2>
+                        <p class="textosemitransparente">Crea un perfil especificando tus datos personales.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="icono">
+                        <h1><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></h1>
+                        <h2>Organízate</h2>
+                        <p class="textosemitransparente">Accede a nuestro buscador y filtra según tus preferencias.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="icono">
+                        <h1><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></h1>
+                        <h2>Diviértete</h2>
+                       <p class="textosemitransparente">Descubre nuevos lugares donde poder disfrutar del mejor café.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="icono">
+                        <h1><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></h1>
+                        <h2>Comparte</h2>
+                        <p class="textosemitransparente">Disfruta de la mejor compañía e invita a tus amigos en las redes sociales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección de NUESTRA APP-->
+    <section id="nuestraapp">
+        <div class="container-fluid">
+            <div class="main-row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="seccion-encabezado">NUESTRO BUSCADOR</h2>
+                    <br><br>
+                    <p>Selecciona tus preferencias y descubre nuevas cafeterías para disfrutar.</p>
+                </div>
+            </div>
+            <aside class="col-md-3">
+
+                <label for="distrito" class="dropdown-toggle">DISTRITO</label>
+                <br>
+                <select id="distrito" name="distrito" class="btn btn-filtro btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                    <option>Bellavista-La Palmera</option>
+                    <option>Casco Antiguo</option>
+                    <option>Cerro-Amate</option>
+                    <option>Este-Alcosa</option>
+                    <option>Los Remedios</option>
+                    <option>Macarena</option>
+                    <option>Nervión</option>
+                    <option>Norte</option>
+                    <option>San Pablo-Santa Justa</option>
+                    <option>Sur</option>
+                    <option>Triana</option>
+                </select>
+
+                <hr>
+
+                <label class="dropdown-toggle" for="ciudad">CIUDAD</label>
+                <br>
+                <select id="ciudad" name="ciudad" class="btn btn-filtro btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                    <option selected="selected">Sevilla</option>
+                </select>
+
+                <hr>
+
+                <label class="dropdown-toggle" for="precio">PRECIO</label>
+                <br>
+                <select id="precio" name="precio" class="btn btn-filtro btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+                    <option selected="selected">Barato (€)</option>
+                    <option>Moderado (€€)</option>
+                    <option>Caro (€€€)</option>
+                </select>
+            </aside>
+            <article class="col-md-9">
+                <div id="mapa"></div>
+            </article>
+        </div>
+    </section>
+
+
+    <!--Sección de CONTACTO-->
+	<section class="seccionmarron" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="seccion-encabezado">¿HABLAMOS?</h2>
+                    <br>
+                    <p><strong>Dirección: </strong>Calle Leonardo da Vinci, 41092 Isla de la Cartuja, Sevilla, Sevilla.
+                    <p><strong>Teléfono: </strong>954 12 34 56
+                    <p>Contacta con nosostros y resuelve todas tus dudas.</p>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Name" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secundary">Enviar&nbsp;&nbsp;<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FOOTER--> 
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="copyright">Copyright &copy; Hi Here 2016</span>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline iconos-sociales">
+                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="http://www.plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline quicklinks">
+                            <li><a href="#">Política de privacidad</a>
+                            </li>
+                            <li><a href="#">Términos de uso</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<div class="social">
+    <ul>
+        <li><a href="http://www.facebook.com" target="_blank" class="fa fa-facebook" id="facebook"></a></li>
+        <li><a href="http://www.twitter.com" target="_blank" class="fa fa-twitter" id="twitter"></a></li>
+        <li><a href="http://www.plus.google.com" target="_blank" class="fa fa-google-plus" id="googleplus"></a></li>
+        <li><a href="http://www.youtube.com" target="_blank" class="fa fa-youtube-play" id="youtube"></a></li>
+        <li><a href="mailto:#" target="_blank" class="fa fa-envelope" id="email"></a></li>
+    </ul>
+
+
+</body>
+
+</html>

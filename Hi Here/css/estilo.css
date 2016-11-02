@@ -1,0 +1,310 @@
+﻿html, body { /*Todo el HTML*/
+  height: 100%; /*Altura*/
+  width: 100%; /*Ancho*/
+}
+body { /*Cuerpo*/
+  font-family: Arial, sans-serif;/*Tipografías del cuerpo*/
+  -webkit-tap-highlight-color: #6a3618; /*Sirve para destacar un enlace cuando se pulsa con el dedo en dispositivos móviles*/
+}
+a { /*Enlaces */
+  transition: all 0.35s;  /*Transición cada 0.35s */
+  color: #c1996d;  /*Color*/
+}
+a:hover { /*Enlaces al poner el cursor sobre el enlace o cuando está seleccionado*/
+  color: #6a3618; /*Color*/
+  text-decoration: none; /*Para quitar el subrayado*/
+}
+h1, h2, h3, h4, h5, h6 { /*Etiquetas H */
+  font-family: Arial, sans-serif; /*Tipografía */
+}
+p { /*Párrafo*/
+  font-size: 16px; /*Tamaño de fuente*/
+  line-height: 1.5; /*Interlineado*/
+  margin-bottom: 20px; /* Margen inferior */
+}
+.seccionmarron { /*Sección de Cómo Funciona*/
+  background-color: #c1996d; /*Color del fondo */ 
+  color: white; /*Color*/
+}
+
+.seccionmarron form { /*Sección del formulario*/
+ margin: 0 auto; /*Centrarlo*/
+ width: 70%; /*Ancho*/
+}
+
+.textosemitransparente { /*Texto semitransparente de la sección de Cómo Funciona*/
+  color: rgba(255, 255, 255, 0.8);
+}
+.seccionlogin { /*Sección de Login y Registro*/
+  background-image: url('../image/fondologin.jpg'); /*Imagen del fondo*/
+  width: 100%; /*Ancho*/
+  height: 100%; /*Altura automática para que se ajuste*/
+  background-size: cover;/*Tamaño del fondo*/
+  background-position: center; /*Posición del fondo centrada*/
+}
+h3 { /*Titular de Login y Registro*/
+  font-weight: 700; /*Grosor de las fuentes*/
+  text-transform: uppercase; /*Todo el texto con mayúsculas*/
+  font-size: 30px; /*Tamaño de letra*/
+  color: white; /*Color*/
+}
+section { /*cada una de las secciones de la página*/
+  padding: 100px 0; /*Relleno, primer valor al superior e inferior y segundo al izquierdo y derehco*/
+}
+aside { /*Sección del filtro de "Nuestra app"*/
+  background-color: #c1996d; /*Color del fondo*/
+  color: #fff; /*Color*/
+  padding-top: 66px; /*Relleno superior*/
+  padding-bottom: 66px; /*Relleno inferior*/
+}
+
+/*----------MAPA----------*/
+
+article, #mapa { /*Dimensiones del mapa*/
+  height: 29.6em; /*Altura*/
+  width: 100%; /*Anchura*/
+  }
+
+/*----------MENÚ----------*/
+
+.navbar-default { /*Menú en dispositivos móviles*/
+  background-color: rgba(255, 255, 255, 1.0); /*Color de fondo en versión móvil. EL último valor es la transparencia*/
+  border-color: transparent; /*Color del borde. Si se quita se queda en pantalla grande*/
+  font-family: Arial, sans-serif; /*Tipografía*/
+  transition: all 0.35s;  /*Transición cada 0.35s */
+  font-weight: 700; /*Grueso de la letra*/
+  font-size: 14px; /*Tamaño de la letra*/
+  text-transform: uppercase; /*Todo el texto con mayúsculas*/
+  text-align: center; /*Centrar el texto*/
+}
+.navbar-default .navbar-header .navbar-brand { /*Menú, menú en versión móvil y logo*/
+  color: #c1996d; /*Color*/
+  font-family: 'Century Gothic', sans-serif; /*Tipografía*/ 
+}
+.navbar-default .navbar-header .navbar-brand:hover { /*Menú, menú en versión móvil y logo cuando al pasar el cursor por encima y cuando está seleccionado*/
+  color: #6a3618; /*Color*/
+}
+.navbar-default .navbar-toggle { /*Menú y las 3 rayas del menú en versión móvil*/ 
+  color: #c1996d; /*Color amarillo claro*/
+  background-color: white; /*Color del fondo blanco*/
+}
+/*En versión móvil es el color de la letra cuando se despliega el menú*/
+.navbar-default .nav li a { /*Palabras del menú cuando no están seleccionados*/
+  color: #c1996d; /*Color*/
+}
+.navbar-default .nav li a:hover { /*Palabras del menú al pasar el ratón por encima*/
+  color: #6a3618; /*Color*/
+}
+.navbar-right { /*Parte derecha del Menú*/
+  margin-right: 0.5%; /*Margen derecho*/
+}
+
+@media (min-width: 768px) { /*Media queries con anchura de más de 768 px, para pantallas grandes*/
+  .navbar-default { /*Menú*/
+    background-color: white; /*Color del fondo*/
+  }
+  .navbar-default .navbar-header .navbar-brand { /*Menú, menú en versión móvil y logo*/
+    color: #c1996d; /*Color y transparencia*/
+    font-size: 30px; /*Tamaño de letra*/
+    font-family: 'Century Gothic', sans-serif; /*Tipografía*/
+  }
+  .navbar-default .navbar-header .navbar-brand:hover { /*Palabras del menú cuando están seleccionados*/
+    color: #6a3618; /*Color amarillo oscuro al pasar el ratón por encima del logo*/
+  }
+}
+
+/*----------HEADER, parte de "TU APP..."-----------*/
+
+header { /*Header, parte del texto principal y botón de empezar*/
+  position: relative; /*Ponemos relative para que se superponga a la imagen de fondo*/
+  width: 100%; /*Ancho*/
+  min-height: auto; /*Altura automática para que se ajuste*/
+  background-size: cover;/*Tamaño del fondo*/
+  background-position: center; /*Posición del fondo centrada*/
+  background-image: url('../image/fondo.jpg'); /*Imagen del fondo*/
+  text-align: center; /*Texto centrado*/
+  color: white; /*Color blanco*/
+  background-attachment: fixed; /*Para hacer el efecto parallax le decimos que la imagen esté fija.*/
+  background-repeat: no-repeat; /*Le decimos que no se repita la imagen de fondo para hacer el parallax*/
+}
+header .header-contenido { /*Header, parte del texto principal y botón de empezar*/
+  position: relative; /*Ponemos relative para que se superponga a la imagen de fondo*/
+  text-align: center; /*Texto centrado*/
+  padding: 100px 15px 100px; /*Releno superior, izquierdo y derecho, e inferior*/
+  width: 100%; /*Ancho*/
+}
+/*Lo ponemos dentro de otra caja ya que si no la posición se desvía*/
+header .header-contenido .header-contenido-interior h1 { /*Header, titular principal*/
+  font-weight: 700; /*Grosor de las fuentes*/
+  text-transform: uppercase; /*Todo el texto con mayúsculas*/
+  margin-top: 0; /*Margen superior*/
+  margin-bottom: 0; /*Margen inferior*/
+  font-size: 30px; /*Tamaño de letra*/
+}
+header .header-contenido .header-contenido-interior p { /*Header, párrafo*/
+  font-weight: 300; /*Grosor de la letra*/
+  color: rgba(255, 255, 255, 0.8); /*Color de la letra y transparencia*/
+  font-size: 16px; /*Tamaño de letra*/
+  margin-bottom: 50px; /*Margen inferior*/
+}
+
+@media (min-width: 768px) { /*Media queries con anchura de más de 768 px, para pantallas grandes*/
+  header {
+    min-height: 100%; /*Altura mínima*/
+  }
+  header .header-contenido { /*Es el header*/
+    position: absolute; /*Le ponemos absoluto para que se superponga */
+    top: 50%; /*Desplazamos entre el borde el elemento y la parte superior del contenedor*/
+    transform: translateY(-50%); /*Desplazamos el header a lo largo del eje vertical*/
+    padding: 0 50px;
+  }
+  header .header-contenido .header-contenido-interior { /*Es el header*/
+    max-width: 1000px; /*Ancho máximo*/
+    margin-left: auto; /*Utilizamos margin y left y right para centrar el header*/
+    margin-right: auto; /*Utilizamos margin y left y right para centrar el header*/
+  }
+  header .header-contenido .header-contenido-interior h1 { /*El H1 del header*/
+    font-size: 50px; /*Tamaño de fuente*/
+  }
+  header .header-contenido .header-contenido-interior p { /*El párrafo del header*/
+    font-size: 18px; /*Tamaño de fuente*/
+    max-width: 80%; /*Ancho máximo*/
+    margin-left: auto; /*Utilizamos margin y left y right para centrar el header*/
+    margin-right: auto; /*Utilizamos margin y left y right para centrar el header*/
+  }
+}
+
+/*----------Sección de CÓMO FUNCIONA----------*/
+
+.seccion-encabezado { /*Cómo funciona y ¿Hablamos?. Los títulos de las secciones*/
+  margin-top: 0; /*Margen superior*/
+}
+.icono { /*Cada una de las cajas de los iconos y texto de "Cómo funciona"*/
+  max-width: 400px; /*Ancho máximo*/
+  margin: 50px auto 0; /*Margen superior, derecho e inferior*/
+}
+@media (min-width: 992px) { /*Dispositivos medianos como portátiles*/
+  .icono { /*Cada una de las cajas de los iconos y texto de "Cómo funciona"*/
+    margin: 20px auto 0; /*Margen superior, derecho e inferior*/
+  }
+}
+.icono p { /*Cada uno de los párrafos textos de "Cómo funciona"*/
+  margin-bottom: 0; /*Margen inferior*/
+}
+
+
+
+/*----------BOTONES-----------*/
+.btn { /*Botones*/
+  font-family: Arial, sans-serif; /*Tipografía*/
+  border: none; /*Sin borde*/
+  opacity: 70%; /*Opacidad*/
+  font-weight: 700; /*Grosor de la letra*/
+  text-transform: uppercase; /*Todo mayúsculas*/
+}
+
+/*----------BOTÓN DE INICIAR SESIÓN-----------*/
+.navbar-btn {
+  background-color: white;
+  font-size: 14px; /*Tamaño de letra*/ 
+}
+
+/*----------BOTÓN EMPEZAR----------*/
+
+.btn-primary { /*Botón de EMPEZAR*/
+  color: white; /*Color*/
+  background-color: #c1996d; /*Color de fondo*/
+  transition: all 0.35s; /*Transición cada 0.35s */
+}
+.btn-primary:hover, .btn-primary:focus { /*Botón de EMPEZAR al pasar el ratón por encima y mantener seleccionado*/
+  color: white; /*Color*/
+  background-color: #6a3618; /*Color del fondo*/
+}
+.btn-xl { /*Botón EMPEZAR*/
+  padding: 15px 30px; /*Relleno de arriba y abajo, y izquierda y derecha*/
+}
+::selection { /*Cuando se selecciona un texto con el ratón*/
+  color: white; /*El texto seleccionado se pone blanco*/
+  background: #ffb411; /*El fondo del texto seleccionado se pone negro*/
+}
+
+/*----------BOTÓN ENVIAR DEL FORMULARIO----------*/
+.btn-secundary { /*Botón del formulario*/
+  color: #c1996d; /*Color*/
+  background-color: white; /*Color de fondo*/
+  transition: all 0.35s; /*Transición cada 0.35s */
+}
+.btn-secundary:hover, .btn-secundary:focus { /*Botón del formulario al pasar el ratón por encima o mantener seleccionado*/
+  color: #c1996d; /*Color*/
+  background-color: #E4E4E4; /*Color del fondo*/
+}
+
+/*----------BOTONES DEL FILTRO----------*/
+
+#distrito, #ciudad, #precio {/*Botones select del filtro*/
+  width:100%; /*Ancho ajustado*/
+  color:white; /*Color*/
+  background-color: #c1996d; /*Color de fondo*/
+}
+
+/*----------FOOTER----------*/
+
+footer { /*Footer*/
+  background-color: white; /*Color del fondo*/
+  padding-top: 10px; /*Relleno superior*/
+  padding-bottom: 10px; /*Relleno inferior*/
+  text-align: center; /*Texto centrado*/
+  line-height: 40px; /*Distancia entre líneas*/
+  font-family: Arial, sans-serif; /*Tipografía*/
+  margin-bottom: 0; /*Margen inferior*/
+}
+
+ul.iconos-sociales li a { /*Botones de Social Media*/
+  display: block; /*Espacio del cuadrado*/
+  background-color: #c1996d; /*Color del fondo*/
+  height: 40px; /*Alto*/
+  width: 40px; /*Ancho*/
+  border-radius: 10%; /*Curvatura de los bordes*/
+  font-size: 20px; /*Tamaño de letra*/
+  line-height: 40px; /*Distancia del icono al cuadrado*/
+  color: white; /*Color*/
+  transition: all 0.3s; /*Transición cada 0.3s */
+}
+ul.iconos-sociales li a:hover { /*Botones de Social Media al pasar el ratón por encima*/
+  background-color: #6a3618; /*Color del fondo*/
+}
+
+/*----------BARRA LATERAL DE REDES SOCIALES----------*/
+
+.social { /*Caja con todos los iconos de las redes sociales*/
+  position: fixed; /*Posición fija para que se mantenga siempre independientemente del scroll*/
+  right: 0; /*Los ponemos a la derecha*/
+  top: 250px;
+  z-index: 100; /*Para superponer y que aparezca siempre la barra lateral*/
+}
+.social ul { /*Lista de los iconos de las redes sociales*/
+  list-style: none; /*Quitar los puntos de enumeración de la lista*/
+}
+.social ul li a {
+  display: block; /*Espacio del cuadrado*/
+  color: white; /*Color*/
+  padding: 10px 15px; /*Relleno superior e inferior, y izquierdo y derecho*/
+  transition: all 0.3s; /*Transición cada 0.3s */
+  background-color: #c1996d; /*Color del fondo*/
+}
+#facebook:hover { /*Cuando pasemos el ratón por encima del icono de Facebook*/
+  background-color: #3b5998; /*Color del fondo*/
+}
+#twitter:hover { /*Cuando pasemos el ratón por encima del icono de Twitter*/
+  background-color: #00abf0; /*Color del fondo*/
+}
+#googleplus:hover { /*Cuando pasemos el ratón por encima del icono de Google Plus*/
+  background-color: #d95232; /*Color del fondo*/
+}
+#youtube:hover { /*Cuando pasemos el ratón por encima del icono de YouTube*/
+  background-color: #ae181f; /*Color del fondo*/
+}
+#email:hover { /*Cuando pasemos el ratón por encima del icono de correo*/
+  background-color: #666666; /*Color del fondo*/
+}
+
